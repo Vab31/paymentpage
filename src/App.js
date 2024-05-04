@@ -1,10 +1,13 @@
 import './App.css';
-import Pg from './pg';
+import Prebooking from './payment/prebooking';
+import Footer from './payment/Footer';
+// import Prebookimg from './payment/prebooking'
 
 function App() {
   return (
     <div className="App">
-     <Pg/>
+     <Prebooking/>
+     <Footer/>
     </div>
   );
 }
