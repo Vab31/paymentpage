@@ -1,15 +1,20 @@
 import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Prebooking from './payment/prebooking';
 import Footer from './payment/Footer';
-// import Prebookimg from './payment/prebooking'
 
 function App() {
   return (
     <div className="App">
-     <Prebooking/>
-     <Footer/>
+      <Router>
+        <Routes>
+          <Route path="" element={<Prebooking />} />
+        </Routes>
+      </Router>
+      <Footer />
     </div>
   );
 }
 
 export default App;
+
